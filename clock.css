@@ -64,27 +64,29 @@ outline: none;
 .social{
    
     height: 10vh;
-    width: 20%;
-    margin-left: 50px;
+    width: 58%;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    align-items: center;
     justify-content: center;
 
 }
 
 
 .social h6{
-    color: white;
+    
     letter-spacing: 1px;
-}
-.social #name{
-    color:rgb(131, 54, 54) ;
+    color:rgb(131, 54, 54);
+    
+
 }
 
 .social .icon{
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 5px;
     
 
@@ -107,20 +109,78 @@ outline: none;
 
 
  /* for moblie  */
-@media only screen and (min-width:100px) and (max-width:1000px){
-    .container{
+@media only screen and (min-width:200px) and (max-width:500px){
+    body{
         width: 100% !important;
-        height: auto !important;
-        padding: 1.5rem;
+        background-size: cover !important;
+        height: 100vh;
+        overflow: hidden;
+
+        
+    }
+    .mian{
+        width: 100%;
+        height: 70vh;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container{
+        width: 60% !important;
+        height: 50vh !important;
+        margin: 0 !important;
+        border: solid 3px;
+
 
     }
    .container h1{
-        width: 70%;
+        width: 80%;
+        font-size: 10px !important;
+        border-radius: 5px !important;
+        margin: 0px 0px 10px 0px !important;
+
      
+    }
+    #time{
+        font-size: 20px !important;
+        width: 75% !important;
+    }
+    #btn{
+        width: 5rem !important;
+        height: 1.5rem !important;
+        font-size: .5rem !important;
+
     }
     .container p{
         width: 80%;
-        font-size: .7rem;
+        font-size: .5rem;
+        margin: 0 !important;
+        
+        margin: 0px 0px 10px 0px !important;
+
+
      
+    }
+    .social{
+        
+        margin: 0 !important;
+        margin: 40px 0 0 0px !important;
+        display: flex;justify-content: center;
+        
+        width: 100%;
+        
+
+    }
+    h6{
+        font-size: 10px;
+    }
+    .icon{
+        
+        display: flex;
+        justify-content: center;
+    }
+    .icon a img{
+        width: 17px;
     }
 }
