@@ -1,61 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="clock.css">
-
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#833636" fill-opacity="1" d="M0,256L7.1,213.3C14.1,171,28,85,42,85.3C56.5,85,71,171,85,213.3C98.8,256,113,256,127,218.7C141.2,181,155,107,169,106.7C183.5,107,198,181,212,208C225.9,235,240,213,254,192C268.2,171,282,149,296,149.3C310.6,149,325,171,339,149.3C352.9,128,367,64,381,74.7C395.3,85,409,171,424,170.7C437.6,171,452,85,466,74.7C480,64,494,128,508,170.7C522.4,213,536,235,551,229.3C564.7,224,579,192,593,160C607.1,128,621,96,635,69.3C649.4,43,664,21,678,48C691.8,75,706,149,720,176C734.1,203,748,181,762,165.3C776.5,149,791,139,805,160C818.8,181,833,235,847,261.3C861.2,288,875,288,889,282.7C903.5,277,918,267,932,234.7C945.9,203,960,149,974,149.3C988.2,149,1002,203,1016,202.7C1030.6,203,1045,149,1059,133.3C1072.9,117,1087,139,1101,144C1115.3,149,1129,139,1144,128C1157.6,117,1172,107,1186,128C1200,149,1214,203,1228,192C1242.4,181,1256,107,1271,96C1284.7,85,1299,139,1313,154.7C1327.1,171,1341,149,1355,133.3C1369.4,117,1384,107,1398,101.3C1411.8,96,1426,96,1433,96L1440,96L1440,0L1432.9,0C1425.9,0,1412,0,1398,0C1383.5,0,1369,0,1355,0C1341.2,0,1327,0,1313,0C1298.8,0,1285,0,1271,0C1256.5,0,1242,0,1228,0C1214.1,0,1200,0,1186,0C1171.8,0,1158,0,1144,0C1129.4,0,1115,0,1101,0C1087.1,0,1073,0,1059,0C1044.7,0,1031,0,1016,0C1002.4,0,988,0,974,0C960,0,946,0,932,0C917.6,0,904,0,889,0C875.3,0,861,0,847,0C832.9,0,819,0,805,0C790.6,0,776,0,762,0C748.2,0,734,0,720,0C705.9,0,692,0,678,0C663.5,0,649,0,635,0C621.2,0,607,0,593,0C578.8,0,565,0,551,0C536.5,0,522,0,508,0C494.1,0,480,0,466,0C451.8,0,438,0,424,0C409.4,0,395,0,381,0C367.1,0,353,0,339,0C324.7,0,311,0,296,0C282.4,0,268,0,254,0C240,0,226,0,212,0C197.6,0,184,0,169,0C155.3,0,141,0,127,0C112.9,0,99,0,85,0C70.6,0,56,0,42,0C28.2,0,14,0,7,0L0,0Z"></path>
-  </svg>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-  <title>Clock</title>
-  <script>
-    let a;
-    let date;
-    let time;
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    setInterval(() => {
-      a = new Date();
-      date = a.toLocaleDateString(undefined, options);
-      time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
-      document.getElementById('time').innerHTML = time + "<br>On " + date;
-    }, 1000);
-  </script>
-</head>
-
-<body>
-
-
-
-<div class="mian">
-  <div class="container">
-    <h1>Current time Is : <span id="time"></span></h1>
-    <p>We are here to show you the time for diffrent countries</p>
-    <button id="btn">Browse Times</button>
-
-  </div>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clock.css">
   
-  <div class="social">
-    <h6> Mohammed jawwad</h6>
-    <div class="icon">
-      <a href="#" target="blank"><img src="14-22-34-Intsagram-128.png"  alt="intsa"></a>
-      <a href="#" target="blank"><img src="14-22-37-LinkedIn-128.png"   alt="linkIn"></a>
-      <a href="https://www.google.com/" target="blank"><img src="14-22-45-Google_-128.png"   alt="google"></a>
-      <a href="https://www.youtube.com/channel/UCfu4HpQ0pZzJ0_cK2OdjTaw" target="blank"><img src="14-22-49-YouTube-128.png"  alt="youtube"></a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#833636" fill-opacity="1"
+        d="M0,256L7.1,213.3C14.1,171,28,85,42,85.3C56.5,85,71,171,85,213.3C98.8,256,113,256,127,218.7C141.2,181,155,107,169,106.7C183.5,107,198,181,212,208C225.9,235,240,213,254,192C268.2,171,282,149,296,149.3C310.6,149,325,171,339,149.3C352.9,128,367,64,381,74.7C395.3,85,409,171,424,170.7C437.6,171,452,85,466,74.7C480,64,494,128,508,170.7C522.4,213,536,235,551,229.3C564.7,224,579,192,593,160C607.1,128,621,96,635,69.3C649.4,43,664,21,678,48C691.8,75,706,149,720,176C734.1,203,748,181,762,165.3C776.5,149,791,139,805,160C818.8,181,833,235,847,261.3C861.2,288,875,288,889,282.7C903.5,277,918,267,932,234.7C945.9,203,960,149,974,149.3C988.2,149,1002,203,1016,202.7C1030.6,203,1045,149,1059,133.3C1072.9,117,1087,139,1101,144C1115.3,149,1129,139,1144,128C1157.6,117,1172,107,1186,128C1200,149,1214,203,1228,192C1242.4,181,1256,107,1271,96C1284.7,85,1299,139,1313,154.7C1327.1,171,1341,149,1355,133.3C1369.4,117,1384,107,1398,101.3C1411.8,96,1426,96,1433,96L1440,96L1440,0L1432.9,0C1425.9,0,1412,0,1398,0C1383.5,0,1369,0,1355,0C1341.2,0,1327,0,1313,0C1298.8,0,1285,0,1271,0C1256.5,0,1242,0,1228,0C1214.1,0,1200,0,1186,0C1171.8,0,1158,0,1144,0C1129.4,0,1115,0,1101,0C1087.1,0,1073,0,1059,0C1044.7,0,1031,0,1016,0C1002.4,0,988,0,974,0C960,0,946,0,932,0C917.6,0,904,0,889,0C875.3,0,861,0,847,0C832.9,0,819,0,805,0C790.6,0,776,0,762,0C748.2,0,734,0,720,0C705.9,0,692,0,678,0C663.5,0,649,0,635,0C621.2,0,607,0,593,0C578.8,0,565,0,551,0C536.5,0,522,0,508,0C494.1,0,480,0,466,0C451.8,0,438,0,424,0C409.4,0,395,0,381,0C367.1,0,353,0,339,0C324.7,0,311,0,296,0C282.4,0,268,0,254,0C240,0,226,0,212,0C197.6,0,184,0,169,0C155.3,0,141,0,127,0C112.9,0,99,0,85,0C70.6,0,56,0,42,0C28.2,0,14,0,7,0L0,0Z">
+      </path>
+    </svg>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Clock</title>
+    <script>
+      let a;
+      let date;
+      let time;
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      setInterval(() => {
+        a = new Date();
+        date = a.toLocaleDateString(undefined, options);
+        time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+        document.getElementById('time').innerHTML = time + "<br>On " + date;
+      }, 1000);
+    </script>
+  </head>
+  
+  <body>
+  
+  
+  
+    <div class="mian">
+      <div class="container">
+        <h1>Current time Is : <span id="time"></span></h1>
+        <p>We are here to show you the time for diffrent countries</p>
+        <button id="btn">Browse Times</button>
+  
+      </div>
+  
+      <div class="social">
+        <h6> Mohammed jawwad</h6>
+        <div class="icon">
+          <a href="#" target="blank"><img src="14-22-34-Intsagram-128.png" alt="intsa"></a>
+          <a href="#" target="blank"><img src="14-22-37-LinkedIn-128.png" alt="linkIn"></a>
+          <a href="https://www.google.com/" target="blank"><img src="14-22-45-Google_-128.png" alt="google"></a>
+          <a href="https://www.youtube.com/channel/UCfu4HpQ0pZzJ0_cK2OdjTaw" target="blank"><img
+              src="14-22-49-YouTube-128.png" alt="youtube"></a>
+        </div>
+  
+      </div>
     </div>
-
-</div>
-    
-  </div>
-
-</body>
-
 </html>
